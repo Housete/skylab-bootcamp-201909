@@ -12,7 +12,7 @@ function Hooray() {
  * 
  * @throws {TypeError} If expression is not a function.
  */
-Hooray.prototype.forEach = function(expression) {
+Hooray.prototype.forEach = function(expression) { debugger
 	if (typeof expression !== 'function') throw TypeError(expression + ' is not a function');
 
 	//throw Error('🤡');
@@ -27,7 +27,7 @@ Hooray.prototype.forEach = function(expression) {
  * 
  * @returns {number} The new lenth of the hooray.
  */
-Hooray.prototype.push = function() { 
+Hooray.prototype.push = function() { debugger
 	for (var i = 0; i < arguments.length; i++)
 		this[this.length++] = arguments[i];
 
