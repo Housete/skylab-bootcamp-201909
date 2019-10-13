@@ -5,7 +5,11 @@
  * @param {argument} element Element to locate in the array.
  * @returns {Array} Array con los elementos que han coincidido
  */
-
+/**
+ *  returns the first index at which a given element can be found in the array
+ * @param {*} array 
+ * @param {*} argument 
+ */
 
 function indexOf(array, argument){
     var result = [];

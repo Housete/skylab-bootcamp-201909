@@ -1,5 +1,8 @@
 
-var numbers = ['one', 'two', 'three'];
+/**
+ *  creates and returns a new string by concatenating all of the elements in an array
+ * @param {*} array Array with the elements that will be concatenated
+ */
 
 function join (array){
     var result = [];
@@ -9,5 +12,5 @@ function join (array){
     return result;
 };
 
-console.log(join(numbers));
+
 
