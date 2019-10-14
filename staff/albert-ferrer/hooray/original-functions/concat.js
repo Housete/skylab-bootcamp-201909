@@ -8,12 +8,12 @@
  * 
  */
 
-function concat(a,b,c,d) {
+function concat(a) {
     var arrays = a;
     var contador = a.length;
-    for (let i = 1; i < arguments.length; i++) {
+    for (var i = 1; i < arguments.length; i++) {
         if (arguments[i] instanceof Array) {
-            for (let j = 0; j < arguments[i].length; j++) {
+            for (var j = 0; j < arguments[i].length; j++) {
                 arrays[contador] = arguments[i][j];
                 contador++;
             } 
@@ -24,5 +24,6 @@ function concat(a,b,c,d) {
 
         }
     }
+    return arrays;
 }
 
