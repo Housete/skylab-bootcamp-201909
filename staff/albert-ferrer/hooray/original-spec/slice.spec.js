@@ -6,7 +6,7 @@ describe('slice',function(){
     })
     it ('should return a new array with all the elements', function () {
         var array = ['a','b','c','d'];
-        var result = ['a','b','c','d']
+        var result = ['a','b','c','d'];
         expect(slice(array)).toBe(result);
     })
     it ('should return a new empty array..', function () {
