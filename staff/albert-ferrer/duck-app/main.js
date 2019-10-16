@@ -72,4 +72,3 @@ function printDuck(duck){
 }
 
 
-// http://duckling-api.herokuapp.com/api/ducks/5c3853aebd1bde8520e66ee8
