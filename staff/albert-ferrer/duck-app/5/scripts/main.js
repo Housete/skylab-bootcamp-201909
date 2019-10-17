@@ -1,4 +1,5 @@
-(function () {debugger
+debugger
+(function () { 
     searchDucks('', function (ducks) {
         ducks = ducks.shuffle().splice(0, 3);
 
