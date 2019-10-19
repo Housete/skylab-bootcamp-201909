@@ -1,10 +1,10 @@
 var duckJs = document.getElementsByClassName("formulario")[0];
 var lista= document.getElementsByClassName("ducks")[0]; 
-var infoDuck=document.getElementsByClassName("theDuck")[0];
-var duckArticle=document.getElementsByClassName("duck__article")[0];
+var infoDuck= document.getElementsByClassName("theDuck")[0];
+var duckArticle= document.getElementsByClassName("duck__article")[0];
 
 
-duckJs.addEventListener("submit", function(e){
+duckJs.addEventListener("submit", function(e){ 
 e.preventDefault();
 lista.innerText = "";
 var query = e.target.busca.value; 

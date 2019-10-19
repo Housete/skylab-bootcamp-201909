@@ -1,4 +1,3 @@
-debugger
 (function () { 
     searchDucks('', function (ducks) {
         ducks = ducks.shuffle().splice(0, 3);
@@ -6,6 +5,21 @@ debugger
         results.render(ducks);
     });
 })();
+
+var login = new Login(document.getElementByClassName('login')[0]);
+login.onSubmit(function(username, password){
+            checkPass(username, password, function(error){
+                if(checkPass(true)){
+                    results.render(ducks);
+                    feedback.hide();
+                    results.show();
+                }else{
+                    feedback.render(error.message);
+                    results.hide();
+                    feedback.show();
+                }   
+});
+
 
 var search = new Search(document.getElementsByClassName('search')[0]);
 search.onSubmit(function (query) {
